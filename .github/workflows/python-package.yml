@@ -16,7 +16,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
@@ -24,15 +24,11 @@ jobs:
       - name: Install package & test deps
         run: |
           python -m pip install --upgrade pip
-          # install your library in editable mode
-          pip install -e .
-          # install test runner and linter
-          pip install pytest flake8
+          # installs osrs-hiscore + its runtime deps + pytest (from extras)
+          pip install -e '.[test]'
 
       - name: Lint with flake8
-        run: |
-          flake8 src
+        run: flake8 src
 
       - name: Run tests
-        run: |
-          pytest --maxfail=1 --disable-warnings -q
+        run: pytest --maxfail=1 --disable-warnings -q
