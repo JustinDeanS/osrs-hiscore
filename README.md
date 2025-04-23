@@ -1,7 +1,7 @@
-# osrs-hiscore
+# runescape-hiscore
 
-[![PyPI version](https://img.shields.io/pypi/v/osrs-hiscore.svg)](https://pypi.org/project/osrs-hiscore/)  
-![CI](https://github.com/JustinDeanS/osrs-hiscore/actions/workflows/python-package.yml/badge.svg)
+[![PyPI version](https://img.shields.io/pypi/v/runescape-hiscore.svg)](https://pypi.org/project/runescape-hiscore/)  
+![CI](https://github.com/JustinDeanS/runescape-hiscore/actions/workflows/python-package.yml/badge.svg)
 
 A simple, polished CLI tool for fetching OldSchool RuneScape hiscores (Regular, Ironman, Hardcore, Ultimate).  
 Features colored tables, XP-to-next-level/200 M calculations, ASCII sparklines, and JSON/CSV export.
@@ -22,13 +22,13 @@ Features colored tables, XP-to-next-level/200 M calculations, ASCII sparklines, 
 ## Installation
 
 \`\`\`bash
-pip install osrs-hiscore
+pip install runescape-hiscore
 \`\`\`
 
 Or install the very latest from GitHub:
 
 \`\`\`bash
-pip install git+https://github.com/JustinDeanS/osrs-hiscore.git
+pip install git+https://github.com/JustinDeanS/runescape-hiscore.git
 \`\`\`
 
 ---
@@ -82,8 +82,8 @@ Options:
 
 \`\`\`bash
 # Clone & enter repo
-git clone https://github.com/JustinDeanS/osrs-hiscore.git
-cd osrs-hiscore
+git clone https://github.com/JustinDeanS/runescape-hiscore.git
+cd runescape-hiscore
 
 # Create a dev environment
 python3 -m venv .venv
